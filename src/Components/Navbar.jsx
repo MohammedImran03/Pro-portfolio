@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 AOS.init();
 const Navbar = () => {
     const [nav, setNav] = useState(false);
-    const [activeLink, setActiveLink] = useState('home');
+    const [activeLink, setActiveLink] = useState('about');
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
       }
