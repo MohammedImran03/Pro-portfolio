@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      signature: ["Style Script"],
+      Titles:["IBM Plex Mono"]
+    },  
   },
   plugins: [],
 }
