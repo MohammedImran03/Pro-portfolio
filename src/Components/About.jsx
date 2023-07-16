@@ -2,8 +2,7 @@ import React from 'react'
 import './Components.css';
 import Educationbackground from "./Educationbackground";
 import "./Components.css";
-
-
+import Hireme from "./Hireme";
 
 const About = () => {
     return (<>
@@ -30,6 +29,7 @@ const About = () => {
             </div></div>
             </div>
             <Educationbackground/>
+            <Hireme/>
           </div>
         </div>
         </> );

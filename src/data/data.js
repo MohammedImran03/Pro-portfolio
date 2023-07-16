@@ -82,7 +82,7 @@ const portfoliosdata = [
       id: 2,
       src: Equipment_hiring_system,
       live: "https://snazzy-tarsier-9ba3af.netlify.app/",
-      title:"Equiment Rental website",
+      title:"Equiment Rental App",
       description:"With authentication and authorization, this app enables users to rent household items effortlessly, with features such as time slots and payments.",
       client:"https://github.com/MohammedImran03/Guvi-hackathon-2-Frontend",
       server:"https://github.com/MohammedImran03/Guvi-hackathon-2-Backend",

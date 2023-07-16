@@ -9,10 +9,9 @@ const Home = () => {
   return (<>
     <div
       name="home"
-      className="homepagefull w-full h-screen bg-[url()] 
-      bg-no-repeat"
+      className="homescreenanimation w-full h-screen "
     >
-      <div className=" max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center h-full px-4">
+      <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center h-full  px-4">
         <div className="flex flex-col justify-center ml-4 h-96">
             {/* <h1 className="text-3xl sm:text-4xl font-bold text-white">Hi there,</h1> */}
           <h4 className="text-xl sm:text-4xl font-bold text-white">
@@ -29,7 +28,7 @@ const Home = () => {
           <a
               smooth
               duration={500}
-              className="group text-xs md:text-xl lg:font-semibold text-white w-fit px-2 py-1 my-2 flex items-center rounded-md bg-gradient-to-r from-orange-500 to-yellow-500 cursor-pointer"
+              className="shadow-md shadow-white group text-xs md:text-xl lg:font-semibold text-white w-fit px-2 py-1 my-2 flex items-center rounded-md bg-gradient-to-r from-orange-500 to-yellow-500 cursor-pointer"
               href="https://drive.google.com/file/d/1-ZI1WMCOdS12ybhf1ZLzxwb0Y0gYCxeR/view" target="_blank"
             // style={{fontSize:"0.5rem"}}
             > My Resume
@@ -38,23 +37,12 @@ const Home = () => {
               </span>
             </a>
             <Link
-              to="contact"
-              smooth
-              duration={500}
-              className="group text-xs md:text-xl lg:font-semibold text-white w-fit mx-2 px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-orange-500 to-yellow-500 cursor-pointer"
-            >
-              Cantact me
-              <span className="group-hover:rotate-90 duration-300">
-                <HiArrowNarrowRight className="ml-1" />
-              </span>
-            </Link>
-            <Link
               to="about"
               smooth
               duration={500}
-              className="group text-xs md:text-xl lg:font-semibold text-white w-fit mx-2 px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-orange-500 to-yellow-500 cursor-pointer"
+              className="shadow-md shadow-white group text-xs md:text-xl lg:font-semibold  text-white w-fit mx-3 px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-orange-500 to-yellow-500 cursor-pointer"
             >
-            View my Work
+            View my work
               <span className="group-hover:rotate-90 duration-300">
                 <HiArrowNarrowRight className="ml-1" />
               </span>
@@ -66,12 +54,11 @@ const Home = () => {
           <img
             src={myimage}
             alt="my Profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-full"
+            className="shadow-md  shadow-white rounded-2xl mx-auto w-2/3 md:w-full p-2"
           />
         </div>
       </div>
     </div>
-
     </>)
 }
 

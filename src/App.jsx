@@ -7,7 +7,7 @@ import Experience from "./Components/Experience";
 import Contact from "./Components/Contacts";
 export default function App() {
   return (
-   <div className="bg-gradient-to-b from-black via-black to-gray-800">
+   <div className="bg-gray-700 ">
      <Home/>
     <Navbar/>
     <SocialLinks/>

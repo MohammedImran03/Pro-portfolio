@@ -28,7 +28,7 @@ const Projects = () => {
              <div class="border-r border-b border-2 border-gray-400 lg:border--0 lg:border-t lg:border-gray-400  rounded-t lg:rounded-r-none lg:rounded-l p-2 flex flex-col justify-between leading-normal">
     <div class="m-1 h-40">
       <div class=" font-bold text-2xl uppercase mb-1">{title}</div>
-      <p class=" text-base text-justify"><b>Description:</b> {description}</p>
+      <p class=" text-base text-justify"><span className="text-orange-500"><b>Description:</b></span> {description}</p>
     </div>
   </div>
     <img src={src}
