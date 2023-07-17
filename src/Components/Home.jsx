@@ -30,7 +30,7 @@ const Home = () => {
               smooth
               duration={500}
               className="shadow-md shadow-white group text-xs md:text-xl lg:font-semibold text-white w-fit px-2 py-1 my-2 flex items-center rounded-md bg-gradient-to-r from-orange-500 to-yellow-500 cursor-pointer"
-              href="https://drive.google.com/file/d/1-ZI1WMCOdS12ybhf1ZLzxwb0Y0gYCxeR/view" target="_blank"
+              href="https://drive.google.com/file/d/19qKtNfZiN755WvokmYG0tN3hwrx_TDvD/view?usp=sharing" target="_blank"
             // style={{fontSize:"0.5rem"}}
             > My Resume
               <span className="group-hover:scale-125">

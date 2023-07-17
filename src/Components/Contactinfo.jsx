@@ -34,7 +34,7 @@ const Contactinfo = () => {
               <FaLinkedin  className="m-1 md:mr-3 text-orange-500" />
               </span><span>LinkedIn</span>
             </a>            
-<a href="https://drive.google.com/file/d/1-ZI1WMCOdS12ybhf1ZLzxwb0Y0gYCxeR/view" target="_blank" className=" group text-md md:text-xl lg:font-semibold font-Titles text-white w-fit px-2 py-1 md:my-3 flex items-center cursor-pointer"
+<a href="https://drive.google.com/file/d/19qKtNfZiN755WvokmYG0tN3hwrx_TDvD/view?usp=sharing" target="_blank" className=" group text-md md:text-xl lg:font-semibold font-Titles text-white w-fit px-2 py-1 md:my-3 flex items-center cursor-pointer"
             > 
               <span className="group-hover:scale-125">
               <CgProfile className="m-1 md:mr-3 text-orange-500" />
