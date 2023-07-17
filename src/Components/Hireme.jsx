@@ -17,7 +17,7 @@ const Hireme = () => {
               duration={500}
               className="group text-lg md:text-xl lg:font-semibold text-white w-fit mt-2 md:mt-6 px-1 py-1 my-1 flex items-center rounded-md bg-gradient-to-r from-black to-gray-400 cursor-pointer"
             >
-              Cantact me
+              Contact me
               <span className="group-hover:scale-125">
                 <AiOutlineSend className="ml-1" size={25} />
               </span>
