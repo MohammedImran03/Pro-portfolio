@@ -6,7 +6,7 @@ import './Components.css';
 const Educationbackground = () => {
   return (<>
      <div  className="mt-10 text-center">
-              <p className="text-4xl font-Titles font-bold inline border-b-4 border-red-500 text-center">
+              <p className="text-4xl font-Titles font-bold inline border-b-4 border-orange-500 text-center">
                 Education
               </p>
             </div>

@@ -105,7 +105,7 @@ const handlelinkbar=()=>{
               className="justify-between text-white w-fit h-fit duration-300 flex items-center opacity-50 visible  lg:invisible bg-gradient-to-r from-orange-500 to-yellow-500 cursor-pointer rounded-md"
             >
  <span className="">
-             <FaCircleDot className="text-4xl p-1"/>
+             <FaCircleDot className="text-5xl p-1"/>
               </span>
             </button>
       <ul>
@@ -138,7 +138,7 @@ const handlelinkbar=()=>{
         {minlinks.map((link) => (
            <div
             key={link.id}
-            className="flex justify-center  w-fit h-fit mx-2 my-3 lg:invisible"
+            className="flex justify-center  w-fit h-fit mx-2 my-4 lg:invisible"
           > <a
               href={link.href ? link.href : "/"}
               className=" text-white font-semibold"
@@ -150,7 +150,7 @@ const handlelinkbar=()=>{
             </span></div></a>
           </div>
         ))}
-        <button className="absolute top-[50%] left-[42%] text-white"   onClick={handlelinkbar}><span className="group-hover:scale-125"><ImCross size={12}/></span></button>
+        <button className="absolute top-[49%] left-[44%] text-white"   onClick={handlelinkbar}><span className="group-hover:scale-125"><ImCross size={15}/></span></button>
       </div>
           </div>
         </div></div>: " "}

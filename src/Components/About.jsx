@@ -12,7 +12,7 @@ const About = () => {
         >
 <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
             <div className="pt-7 text-center ">
-              <p className="text-4xl font-Titles font-bold inline border-b-4 border-red-500 text-center">
+              <p className="text-4xl font-Titles font-bold inline border-b-4 border-orange-500 text-center">
                 About
               </p>
             </div>
@@ -25,7 +25,7 @@ const About = () => {
             </div>
             <br />
             <div className="paragraghtext">
-            With a passion for web development, I am eager to leverage my skills to tackle complex projects and deliver high-quality solutions. Through hands-on experience and continuous learning, I am confident in creating innovative web applications. Joining a dynamic team, I aim to collaborate, exchange ideas, and stay updated with the latest industry trends.
+            With a passion for web development, I'm eager to leverage my skills for complex projects, delivering high-quality solutions. With hands-on experience and continuous learning, I create innovative web applications. Joining a dynamic team, I aim to collaborate, exchange ideas, and stay updated with industry trends.
             </div></div>
             </div>
             <Educationbackground/>

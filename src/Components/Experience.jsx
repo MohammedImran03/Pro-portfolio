@@ -136,7 +136,7 @@ const Experience = () => {
           className="w-full  text-white"
         ><div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
           <div className="pt-7 text-center">
-              <p className="text-4xl font-Titles font-bold inline border-b-4 border-red-500 text-center">
+              <p className="text-4xl font-Titles font-bold inline border-b-4 border-orange-500 text-center">
                 Experience
               </p>
             </div>

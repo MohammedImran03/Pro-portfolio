@@ -1,51 +1,70 @@
 import React from "react";
+import Contactinfo from "./Contactinfo";
+import {MdOutlineKeyboardDoubleArrowUp} from "react-icons/md";
+import { Link } from "react-scroll";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 const Contact = () => {
   return (
     <div
-      name="contact"
-      className="w-full h-screen  pb-4 pl-4 pr-4 text-white"
-    >
-      <div className="flex flex-col pb-4 pl-4 pr-4 justify-center max-w-screen-lg mx-auto h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Contact
-          </p>
-          <p className="pt-3 pb-2">Submit the form below to get in touch with me</p>
-        </div>
-        <div className="flex justify-center items-center">
+    name="contact"
+    className="w-full text-white"
+  ><div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+    <div className="pt-7 text-center pb-5">
+        <p className="text-4xl font-Titles font-bold inline border-b-4 border-orange-500 text-center">
+          Contact
+        </p>
+      </div>
+      <div className="w-full grid grid-cols-1 justify-center lg:grid-cols-2 gap-4 text-center py-3  px-3 sm:px-0">
+        <div><Contactinfo/></div>
+        <div className=" "> 
+        <p className="p-2 mt-4 md:mt-0">Submit the form below to get in touch with me </p>
+          <div className="flex justify-center items-center">
           <form
-            action="https://getform.io/f/31313319-e886-40c5-af98-21b4317d9014"
+            action="https://getform.io/f/f557a96b-d274-4128-8ab3-420c14b2b9a8"
             method="POST"
-            className="flex flex-col w-full md:w-1/2"
-          >
+            className="flex flex-col w-full"
+          ><div className="flex justify-start m-1 text-lg font-Titles">Name</div>
             <input
               type="text"
               name="name"
               placeholder="Enter your name"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-            />
+            /><div className="flex justify-start m-1 text-lg font-Titles mt-4">Email</div>
             <input
               type="text"
               name="email"
-              placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-            />
+              placeholder="Enter your email address"
+              className=" p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+            /><div className="flex justify-start m-1 text-lg font-Titles mt-4">Message</div>
             <textarea
               name="message"
               placeholder="Enter your message"
-              rows="10"
+              rows="7"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
 
-            <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
+            <button className="text-white bg-gradient-to-r from-orange-500 to-yellow-500 px-2 py-2 my-4 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let's Talk
             </button>
           </form>
         </div>
+        </div>
       </div>
     </div>
+    <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} className="h-20 bg-gray-950 font-Titles relative"><div data-aos="zoom-in"  data-aos-duration="1000">Mohammed Imran © 2023</div>
+    <div className="absolute top-[-30%] bg-orange-500 rounded-md">
+    <Link
+              to="home"
+              smooth
+              duration={500}>
+      <span><MdOutlineKeyboardDoubleArrowUp size={30} className="m-1"/></span></Link></div>    
+    </div>
+  </div>
   );
 };
 

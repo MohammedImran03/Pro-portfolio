@@ -3,6 +3,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import {LiaExternalLinkSquareAltSolid} from "react-icons/lia";
 import myimage from "../assets/html.png";
 import { Link } from "react-scroll";
+import myphoto from "../assets/myphoto.png";
 import "./Components.css";
 
 const Home = () => {
@@ -50,13 +51,13 @@ const Home = () => {
 
           </div>
         </div>
-        <div className="sm:ml-10 flex justify-center align-middle mt-4">
+        {/* <div className="sm:ml-10 flex justify-center align-middle mt-4">
           <img
             src={myimage}
             alt="my Profile"
-            className="shadow-md  shadow-white rounded-2xl mx-auto w-2/3 md:w-full p-2"
+            className="shadow-md  shadow-white rounded-2xl mx-auto w-2/3 md:w-full  p-2"
           />
-        </div>
+        </div> */}
       </div>
     </div>
     </>)
