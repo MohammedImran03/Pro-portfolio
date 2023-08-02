@@ -91,13 +91,80 @@ const SocialLinks = () => {
     },
   ];
 
+
+
   const [linkbar, setLinkbar] = useState(false);
+  const [speeddial, setSpeeddial] = useState(false);
 const handlelinkbar=()=>{
   setLinkbar(!linkbar);
 }
+// document.getElementById("speed-dial-menu-click").addEventListener("wheel", handlespeeddial);
+// const handlespeeddial=()=>{
+//   setSpeeddial(false);
+// }
   return (<>
+ 
+ <div className="flex-col top-[35%] left-0 fixed lg:flex">
+    <button
+    onClick={handlelinkbar}
+              smooth
+              duration={500}
+              className="justify-between text-white w-fit h-fit duration-300 flex items-center opacity-50 visible  md:invisible bg-gradient-to-r from-orange-500 to-yellow-500 cursor-pointer rounded-md"
+            >
+ <span className="">
+             <FaCircleDot className="text-5xl p-1"/>
+              </span>
+            </button>
+</div>
 
-    <div className="flex-col top-[35%] left-0 fixed lg:flex">
+<div data-dial-init class="fixed right-6 bottom-6 group invisible md:visible">
+
+  { speeddial && <div id="speed-dial-menu-click" class="flex flex-col items-center  mb-4 space-y-2">
+        <a href="https://www.linkedin.com/in/mohammed-imran-831232241/"  target="_blank" type="button" data-tooltip-target="tooltip-share" data-tooltip-placement="left" class="relative flex justify-center items-center w-[52px] h-[52px] text-white hover:text-gray-900 bg-orange-500 rounded-full border border-orange-800 ">
+        <FaLinkedin size={30} />
+            <span class="sr-only" >LinkedIn</span>
+        </a>
+        <div id="tooltip-share" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-orange-500 rounded-lg shadow-sm opacity-0 tooltip">
+        LinkedIn
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <a  href="https://github.com/MohammedImran03" target="_blank" type="button" data-tooltip-target="tooltip-print" data-tooltip-placement="left" class="flex justify-center items-center w-[52px] h-[52px] text-white hover:text-gray-900 bg-orange-500 rounded-full border border-orange-800">
+        <FaGithub size={30} />
+            <span class="sr-only">Git Hub</span>
+        </a>
+        <div id="tooltip-print" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-orange-500 rounded-lg shadow-sm opacity-0 tooltip ">
+        GitHub
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <a href="mailto:mohammedimran1407.mi@gmail.com" target="_blank" type="button" data-tooltip-target="tooltip-download" data-tooltip-placement="left" class="flex justify-center items-center w-[52px] h-[52px] text-white hover:text-gray-900 bg-orange-500 rounded-full border border-orange-800 ">
+        <HiOutlineMail size={30} />
+            <span class="sr-only">Mail</span>
+        </a>
+        <div id="tooltip-download" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-orange-500 rounded-lg shadow-sm opacity-0 tooltip ">
+            Email
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <a  href="https://drive.google.com/file/d/19qKtNfZiN755WvokmYG0tN3hwrx_TDvD/view?usp=sharing" target="_blank" type="button" data-tooltip-target="tooltip-copy" data-tooltip-placement="left" class="flex justify-center items-center w-[52px] h-[52px] text-white hover:text-gray-900 bg-orange-500 rounded-full border border-orange-800 ">
+        <BsFillPersonLinesFill size={30} />
+            <span class="sr-only">Resume</span>
+        </a>
+        <div id="tooltip-copy" role="tooltip" class="absolute z-10 invisible inline-block w-auto px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-orange-500 rounded-lg shadow-sm opacity-0 tooltip ">
+            Resume
+            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+    </div>}
+    <button onClick={()=>{setSpeeddial(!speeddial)}} type="button" data-dial-toggle="speed-dial-menu-click" data-dial-trigger="click" aria-controls="speed-dial-menu-click" aria-expanded="false" class="flex items-center justify-center text-white hover:text-gray-900 bg-orange-500 rounded-full border border-orange-400  w-14 h-14   hover:focus:ring-2 hover:focus:ring-white focus:outline-none d">
+        <svg class="w-5 h-5 transition-transform group-hover:rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+        </svg>
+        <span class="sr-only">Open actions menu</span>
+    </button>
+</div>
+
+
+
+
+    {/* <div className="flex-col top-[35%] left-0 fixed lg:flex">
     <button
     onClick={handlelinkbar}
               smooth
@@ -128,7 +195,7 @@ const handlelinkbar=()=>{
           </li>
         ))}
       </ul>
-    </div>
+    </div> */}
 
 {linkbar ? <div className="flex justify-center lg:invisible"><div
           className="flex-col top-[40%] fixed "

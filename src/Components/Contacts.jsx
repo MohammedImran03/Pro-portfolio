@@ -56,13 +56,18 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} className="h-20 bg-gray-950 font-Titles relative"><div data-aos="zoom-in"  data-aos-duration="1000">Mohammed Imran © 2023</div>
-    <div className="absolute top-[-30%] bg-orange-500 rounded-md">
+    <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} className="h-20 bg-gradient-to-r from-orange-600 via-orange-500 to-orange-400 font-Titles">
+      <div  className=" relative ">
+      Mohammed Imran © 2023
+      <div className="absolute bottom-8 left-20  cursor-pointer animate-bounce">
     <Link
               to="home"
               smooth
-              duration={500}>
-      <span><MdOutlineKeyboardDoubleArrowUp size={30} className="m-1"/></span></Link></div>    
+              duration={1000}
+              >
+      <span><MdOutlineKeyboardDoubleArrowUp size={32} className="m-1"/></span></Link></div>    
+      
+      </div>
     </div>
   </div>
   );

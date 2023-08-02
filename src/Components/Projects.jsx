@@ -12,7 +12,7 @@ AOS.init();
 
 const Projects = () => {
       return (<>
-        <div   name="projects"
+        <div   name="Works"
           className="text-white"
         >
           <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
