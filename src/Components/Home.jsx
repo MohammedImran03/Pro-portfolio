@@ -22,7 +22,7 @@ const Home = () => {
           I'm a full-stack web Developer.
           </h4>
           <p className="text-white text-sm py-2 max-w-md">
-          As an Engineering graduate proficient in web development seeking a challenging developer role to contribute and grow. &#128522;
+          Iam an  Engineering graduate proficient in web development seeking a challenging developer role to contribute and grow. &#128522;
           </p>
           <div className="flex gap-1 flex-wrap justify-center px-4">
 
