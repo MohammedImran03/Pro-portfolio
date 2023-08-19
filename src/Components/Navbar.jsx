@@ -36,7 +36,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="flex justify-between items-center w-full h-auto p-2  bg-orange-400 text-white fixed top-0" 
+    <div className="flex justify-between items-center w-full h-auto p-2  bg-orange-400 text-white sticky top-0" 
     //  data-aos="fade-down"
      >
       <ul className="hidden md:flex">
