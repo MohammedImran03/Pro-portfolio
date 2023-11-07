@@ -11,7 +11,7 @@ const About = () => {
           className="w-full text-white"
         >
 <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full">
-            <div className="pt-7 text-center ">
+            <div className="pt-12 text-center ">
               <p className="text-4xl font-Titles font-bold inline border-b-4 border-orange-500 text-center">
                 About
               </p>

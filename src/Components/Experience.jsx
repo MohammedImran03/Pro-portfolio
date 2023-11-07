@@ -21,137 +21,138 @@ const Experience = () => {
           id: 1,
           src: html,
           title: "HTML",
-          style: "shadow-orange-500",
+          style: "border-orange-500",
           value:"70%",
         },
         {
           id: 2,
           src: css,
           title: "CSS",
-          style: "shadow-blue-500",
+          style: "border-blue-500",
           value:"70%",
         },
         {
           id: 3,
           src: javascript,
           title: "JavaScript",
-          style: "shadow-yellow-500",
+          style: "border-yellow-300",
           value:"70%",
         },
         {
           id: 4,
           src: react,
           title: "React",
-          style: "shadow-sky-600",
+          style: "border-sky-600",
           value:"70%",
         },
         {
           id: 5,
           src: Bootstrap_logo,
           title: "Bootstrap",
-          style: "shadow-violet-500",
+          style: "border-violet-500",
           value:"70%",
         },
         {
           id: 6,
           src: mui,
           title: "Material UI",
-          style: "shadow-blue-400",
+          style: "border-blue-400",
           value:"70%",
         },
         {
             id: 7,
             src: mongodb,
             title: "Mongo DB",
-            style: "shadow-green-500",
+            style: "border-green-500",
             value:"70%",
         },
         {
             id: 8,
             src: mysql,
             title: "My SQL",
-            style: "shadow-sky-400",
+            style: "border-sky-400",
             value:"70%",
         },
         {
           id: 9,
           src: node,
           title: "Node Js",
-          style: "shadow-green-300",
+          style: "border-green-300",
           value:"70%",
         },
         {
           id: 10,
           src: express,
           title: "Express",
-          style: "shadow-gray-400",
+          style: "border-gray-400",
           value:"70%",
         },
         {
           id: 11,
           src: redux,
           title: "Redux",
-          style: "shadow-purple-400",
+          style: "border-purple-400",
           value:"70%",
         },
         {
           id: 12,
           src: router,
           title: "Router",
-          style: "shadow-red-600",
+          style: "border-red-600",
           value:"70%",
         },
         {
           id: 13,
           src: tailwind,
           title: "Tailwind Css",
-          style: "shadow-sky-400",
+          style: "border-sky-400",
           value:"70%",
         },
         {
           id: 14,
           src: chartjs,
           title: "Chart Js",
-          style: "shadow-pink-400",
+          style: "border-pink-400",
           value:"70%",
         },
         {
           id: 14,
           src: github,
           title: "Git Hub",
-          style: "shadow-gray-400",
+          style: "border-gray-400",
           value:"70%",
         },
         {
           id: 15,
           src: aws,
           title: "AWS",
-          style: "shadow-orange-400",
+          style: "border-orange-400",
           value:"70%",
         },
       ];
       return (
         <div
           name="skills"
-          className="w-full  text-white"
+          className="w-full text-white"
         ><div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-          <div className="pt-7 text-center">
+          <div className="pt-12 text-center">
               <p className="text-4xl font-Titles font-bold inline border-b-4 border-orange-500 text-center">
                 Experience
               </p>
             </div>
-            <p className="pt-8">These are the technologies I've worked with . . . </p>
-            <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8  px-12 sm:px-0">
+            <p className="pt-8 md:text-xl">These are the technologies I've worked with... </p>
+            <div className=''>
+            <div className="w-full grid grid-cols-3 md:grid-cols-5 gap-3 text-center py-4  px-4 sm:px-0">
               {techs.map(({ id, src, title, style}) => (
                 <div
                   key={id}
-                  className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
+                  className={`hover:border-2 hover:scale-105 duration-300 py-2 rounded-lg ${style} bg-gray-800`}
                 >
-                  <img src={src} alt="" className="w-20 mx-auto" />
-                  <p className="mt-4">{title}</p>
+                  <img src={src} alt="" className="w-10 mx-auto" />
+                  <p className="mt-2">{title}</p>
                 </div>
               ))}
-            </div>
+            </div></div>
           </div>
         </div>
       );

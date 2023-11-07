@@ -1,5 +1,9 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {FaCircleDot} from "react-icons/fa6";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 import {LiaExternalLinkSquareAltSolid} from "react-icons/lia";
 import myimage from "../assets/html.png";
 import { Link } from "react-scroll";
@@ -7,6 +11,31 @@ import myphoto from "../assets/myphoto.png";
 import "./Components.css";
 
 const Home = () => {
+
+  const links = [
+    {
+      id: 1,
+      child: <FaLinkedin size={40} />,
+      href: "https://www.linkedin.com/in/mohammed-imran-831232241/",
+    },
+    {
+      id: 2,
+      child: <FaGithub size={40} />,
+      href: "https://github.com/MohammedImran03",
+    },
+    {
+      id: 3,
+      child:<HiOutlineMail size={40} />,
+      href: "mailto:mohammedimran1407.mi@gmail.com",
+    },
+    {
+      id: 4,
+      child:<BsFillPersonLinesFill size={40} />,
+      href: "Resume.pdf",
+      download: true,
+    },
+  ];
+
   return (<>
     <div
       name="home"
@@ -24,9 +53,21 @@ const Home = () => {
           <p className="text-white text-sm py-2 max-w-md">
           As an  Engineering graduate proficient in web development seeking a challenging developer role to contribute and grow. &#128522;
           </p>
+          <div className="flex justify-center my-2">
+          {links.map((link) => (
+           <div className="border-2 shadow-md shadow-white mx-1 md:mx-2 md:p-1 rounded-full hover:bg-black"
+            key={link.id}> <a
+              href={link.href ? link.href : "/"}
+              className=" text-white font-semibold"
+              download={link.download}
+              target="_blank"
+              rel="noreferrer"
+            ><div className="flex justify-center mx-2">{link.child}</div></a>
+          </div>
+        ))}
+          </div>
           <div className="flex gap-1 flex-wrap justify-center px-4">
-
-          <a
+          {/* <a
               smooth
               duration={500}
               className="shadow-md shadow-white group text-xs md:text-xl lg:font-semibold text-white w-fit px-2 py-1 my-2 flex items-center rounded-md bg-gradient-to-r from-orange-500 to-yellow-300 cursor-pointer"
@@ -36,12 +77,12 @@ const Home = () => {
               <span className="group-hover:scale-125">
               <LiaExternalLinkSquareAltSolid className="ml-1" />
               </span>
-            </a>
+            </a> */}
             <Link
               to="about"
               smooth
               duration={500}
-              className="shadow-md shadow-white group text-xs md:text-xl lg:font-semibold  text-white w-fit mx-3 px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-orange-500 to-yellow-300 cursor-pointer"
+              className="shadow-lg shadow-white group text-xs md:text-xl lg:font-semibold  text-white w-fit mx-3 px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-orange-500 to-yellow-300 cursor-pointer"
             >
             View my work
               <span className="group-hover:rotate-90 duration-300">

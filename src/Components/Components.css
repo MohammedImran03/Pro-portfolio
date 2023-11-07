@@ -5,3 +5,26 @@
     background-image: linear-gradient(to bottom right, rgb(17, 17, 17), rgb(69, 69, 69),rgb(17, 17, 17));
 }
 
+.navbarlinks{
+    /* margin-bottom: 10px; */
+}
+
+.cool-link {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width .5s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+   transition: width .5s;
+}

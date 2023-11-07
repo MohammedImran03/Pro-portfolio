@@ -14,7 +14,7 @@ const Contact = () => {
     name="contact"
     className="w-full text-white"
   ><div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-    <div className="pt-7 text-center pb-5">
+    <div className="pt-12 text-center pb-5">
         <p className="text-4xl font-Titles font-bold inline border-b-4 border-orange-500 text-center">
           Contact
         </p>
@@ -44,7 +44,7 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Enter your message"
-              rows="7"
+              rows="5"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
             ></textarea>
 
@@ -56,10 +56,10 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} className="h-20 bg-gradient-to-r from-orange-600 via-orange-500 to-orange-400 font-Titles">
+    <div style={{display:"flex",justifyContent:"center",alignItems:"center"}} className="h-16 bg-gradient-to-r from-orange-600 via-orange-500 to-orange-400 font-Titles">
       <div  className=" relative ">
       Mohammed Imran © 2023
-      <div className="absolute bottom-8 left-20  cursor-pointer animate-bounce">
+      <div className="absolute bottom-6 left-20  cursor-pointer animate-bounce">
     <Link
               to="home"
               smooth

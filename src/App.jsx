@@ -8,8 +8,8 @@ import Contact from "./Components/Contacts";
 export default function App() {
   return (
    <div className="bg-gray-700 ">
+      <Navbar/>
      <Home/>
-    <Navbar/>
     <SocialLinks/>
     <About/>
     <Projects />

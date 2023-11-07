@@ -117,7 +117,7 @@ const handlelinkbar=()=>{
             </button>
 </div>
 
-<div data-dial-init class="fixed right-6 bottom-6 group invisible md:visible">
+{/* <div data-dial-init class="fixed right-6 bottom-6 group invisible md:visible">
 
   { speeddial && <div id="speed-dial-menu-click" class="flex flex-col items-center  mb-4 space-y-2">
         <a href="https://www.linkedin.com/in/mohammed-imran-831232241/"  target="_blank" type="button" data-tooltip-target="tooltip-share" data-tooltip-placement="left" class="relative flex justify-center items-center w-[52px] h-[52px] text-white hover:text-gray-900 bg-orange-500 rounded-full border border-orange-800 ">
@@ -159,7 +159,7 @@ const handlelinkbar=()=>{
         </svg>
         <span class="sr-only">Open actions menu</span>
     </button>
-</div>
+</div> */}
 
 
 
