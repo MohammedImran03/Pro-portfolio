@@ -11,7 +11,7 @@ AOS.init();
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
-    const [activeLink, setActiveLink] = useState('home');
+    const [activeLink, setActiveLink] = useState('about');
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
       }
@@ -45,7 +45,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="flex justify-between items-center w-full h-auto p-2 py-3 bg-gradient-to-r from-orange-500 to-yellow-300 text-white fixed top-0" 
+    <div className="flex justify-between items-center w-full h-auto p-2 py-3 bg-gradient-to-r from-orange-500 to-yellow-300 text-white sticky top-0" 
     //  data-aos="fade-down"
      >
       <div className="text-2xl font-Titles">Mohammed Imran</div>
