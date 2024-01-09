@@ -8,6 +8,7 @@ import {LiaExternalLinkSquareAltSolid} from "react-icons/lia";
 import myimage from "../assets/html.png";
 import { Link } from "react-scroll";
 import myphoto from "../assets/myphoto.png";
+import Navbar from "./Navbar";
 import "./Components.css";
 
 const Home = () => {
@@ -41,6 +42,7 @@ const Home = () => {
       name="home"
       className="homescreenanimation w-full h-screen "
     >
+      <Navbar/>
       <div className="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-center h-full  px-4">
         <div className="flex flex-col justify-center ml-4 h-96">
             {/* <h1 className="text-3xl sm:text-4xl font-bold text-white">Hi there,</h1> */}

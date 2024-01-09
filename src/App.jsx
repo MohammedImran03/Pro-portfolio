@@ -10,8 +10,8 @@ export default function App() {
    <div className="bg-gray-700 ">
      
       {/* <div> */}
+      {/* <Navbar/> */}
      <Home/>
-     <Navbar/>
     <SocialLinks/>
     <About/>
     <Projects />
