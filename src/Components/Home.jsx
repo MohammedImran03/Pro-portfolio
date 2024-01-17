@@ -32,8 +32,8 @@ const Home = () => {
     {
       id: 4,
       child:<BsFillPersonLinesFill size={40} />,
-      href: "Resume.pdf",
-      download: true,
+      href: "https://drive.google.com/file/d/1YpTSNj0xHpWYp7LyW_ZbOUSCz8dik8hh/view?usp=sharing",
+      // download: true,
     },
   ];
 
